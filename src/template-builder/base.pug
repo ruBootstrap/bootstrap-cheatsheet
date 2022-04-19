@@ -2,19 +2,22 @@
 - var showAlert    = false
 
 doctype html
-html
+html(lang="ru")
     //- BEGIN: Head
     head
         block meta
             include includes/head.pug
         block styles
             include includes/styles.pug
+        block metrics
+            include partials/gtm-head.html
     //- END: Head
     = '\n'
     //- BEGIN: Body
     body.bs-cheatsheet(class=bodyCustomClass)
         //- BEGIN: Header
         block header
+          include partials/gtm-body.html
           include partials/header.pug
         //- END: Header
         main
