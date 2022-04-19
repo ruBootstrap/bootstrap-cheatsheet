@@ -4,7 +4,7 @@ var rename = require('gulp-rename');
 module.exports = (gulp, callback) => {
   const uglifyJsTask = function () {
     return gulp
-      .src(['**/*.js', '!**/*.min.js'], {
+      .src([config.source.js + '/**/*.js', '!' + config.source.js + '/**/*.min.js'], {
         cwd: config.destination.js
       })
       .pipe(uglify())

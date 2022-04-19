@@ -47,7 +47,7 @@ gulp.task(
 gulp.task('dist-js', gulp.series(cleanTasks.js, copyTask.js, uglifyTasks.js));
 
 // Dist files
-gulp.task('dist-files', gulp.series(cleanTasks.js, copyTask.images, copyTask.vendors));
+gulp.task('dist-files', gulp.series(copyTask.images, copyTask.vendors));
 
 // Dist HTML
 gulp.task(
