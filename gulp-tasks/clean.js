@@ -9,7 +9,7 @@ module.exports = (gulp, callback) => {
       })
       .pipe(clean());
   };
-  
+
   const cleanJsTask = function () {
     return gulp
       .src(config.destination.js, {
@@ -17,23 +17,53 @@ module.exports = (gulp, callback) => {
         allowEmpty: true
       })
       .pipe(clean());
-  };  
+  };
 
   const cleanHtmlTask = function () {
     return gulp
-      .src('*.html', {
+      .src(config.destination.dist + '/*.html', {
         read: false,
         allowEmpty: true
       })
       .pipe(clean());
   };
-  
+
+  const cleanVendorsTask = function () {
+    return gulp
+      .src(config.destination.vendors, {
+        read: false,
+        allowEmpty: true
+      })
+      .pipe(clean());
+  };
+
+  const cleanImagesTask = function () {
+    return gulp
+      .src(config.destination.images, {
+        read: false,
+        allowEmpty: true
+      })
+      .pipe(clean());
+  };
+
+  const cleanDistTask = function () {
+    return gulp
+      .src(config.destination.dist, {
+        read: false,
+        allowEmpty: true
+      })
+      .pipe(clean());
+  };
+
   // ---------------------------------------------------------------------------
   // Exports
 
   return {
     css: cleanCssTask,
     js: cleanJsTask,
-    html: cleanHtmlTask
+    html: cleanHtmlTask,
+    vendors: cleanVendorsTask,
+    images: cleanImagesTask,
+    dist: cleanDistTask
   };
 }

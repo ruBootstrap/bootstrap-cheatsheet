@@ -27,6 +27,10 @@ const uglifyTasks = require('./gulp-tasks/uglify')(gulp);
 // Clean CSS & JS
 gulp.task('dist-clean', cleanTasks.css, cleanTasks.js);
 
+// Clean Dist
+gulp.task('dist-clean-all', cleanTasks.html, cleanTasks.css, cleanTasks.js, cleanTasks.vendors, cleanTasks.images);
+gulp.task('dist-cls', cleanTasks.dist);
+
 // Create CSS from SCSS
 gulp.task(
   'dist-css',
@@ -41,6 +45,9 @@ gulp.task(
 
 // Dist JS
 gulp.task('dist-js', gulp.series(cleanTasks.js, copyTask.js, uglifyTasks.js));
+
+// Dist files
+gulp.task('dist-files', gulp.series(cleanTasks.js, copyTask.images, copyTask.vendors));
 
 // Dist HTML
 gulp.task(
@@ -59,5 +66,6 @@ gulp.task('replacement', gulp.series(replaceTasks.css, replaceTasks.js));
 
 // Default / Basic tasks
 gulp.task('dist', gulp.parallel('dist-clean', 'dist-css', 'dist-js', 'dist-html', 'beautify-html', 'replacement'));
+gulp.task('prod', gulp.series('dist-clean', 'dist-css', 'dist-js', 'dist-files', 'dist-html', 'beautify-html', 'replacement'));
 
-gulp.task('default', gulp.parallel('dist-css', 'dist-js'));
+gulp.task('default', gulp.parallel('dist-css', 'dist-js', 'dist-files'));

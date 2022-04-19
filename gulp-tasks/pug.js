@@ -14,7 +14,7 @@ module.exports = (gulp, callback) => {
           }
         })
       )
-      .pipe(gulp.dest("./"));
+      .pipe(gulp.dest("./dist/"));
   };
 
   const pugWatchTask = function () {
@@ -27,7 +27,7 @@ module.exports = (gulp, callback) => {
           }
         })
       )
-      .pipe(gulp.dest("./"));
+      .pipe(gulp.dest("./dist/"));
   };
 
   // ---------------------------------------------------------------------------

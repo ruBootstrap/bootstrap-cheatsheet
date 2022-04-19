@@ -2,10 +2,15 @@
   "app_assets": "assets",
   "app_assets_path": "assets",
   "destination": {
-    "js": "assets/js",
-    "css": "assets/css"
+    "dist": "dist",
+    "images": "dist/assets/images",
+    "vendors": "dist/assets/vendors",
+    "js": "dist/assets/js",
+    "css": "dist/assets/css"
   },
   "source": {
+    "images": "assets/images",
+    "vendors": "assets/vendors",
     "js": "src/js",
     "sass": "src/scss",
     "template": "src/template-builder"

@@ -2,6 +2,7 @@
 ###################
 /assets/css
 /assets/js
+/dist/
 
 # Dependencies #
 ################

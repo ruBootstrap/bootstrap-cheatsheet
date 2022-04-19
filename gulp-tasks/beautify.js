@@ -4,9 +4,9 @@ module.exports = (gulp, callback) => {
 
   const beautifyHtmlTask = function () {
     return gulp
-      .src('html/**/*.html')
+      .src(config.destination.dist + '/**/*.html')
       .pipe(htmlbeautify({ indentSize: 2 }))
-      .pipe(gulp.dest('./html/'));
+      .pipe(gulp.dest(config.destination.dist + '/'));
   };
 
   // ---------------------------------------------------------------------------
