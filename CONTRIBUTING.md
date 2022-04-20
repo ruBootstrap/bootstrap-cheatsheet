@@ -1,26 +1,22 @@
-# Contributing
+# Содействие
 
-  > _A real community, however, exists only when its members interact in a meaningful way that deepens their understanding of each other and leads to learning._
+  > _Однако настоящее сообщество существует только тогда, когда его члены взаимодействуют осмысленным образом, что углубляет их понимание друг друга и ведет к обучению._
 
-If you would like to support this project, have an interesting idea how to improve the operation of this tool, or if you found some errors - fork this, add your fixes, and add a pull request of your branch to the **master branch**.
+Если вы хотите поддержать этот проект, у вас есть интересная идея, как улучшить работу этого инструмента, или если вы нашли какие-то ошибки - разветвите это, добавьте свои исправления и добавьте пулл-реквест вашей ветки в **master branch**.
 
-## Using the issue tracker
+## Использование трекера ошибок
 
-The [issue tracker](https://github.com/trimstray/the-book-of-secret-knowledge/issues) is
-the preferred channel for bug reports, features requests and submitting pull requests, but please respect the following restrictions:
+[Трекера ошибок](https://github.com/trimstray/the-book-of-secret-knowledge/issues) предпочтительный канал для отчетов об ошибках, запросов функций и отправки запросов на вытягивание, но, пожалуйста, соблюдайте следующие ограничения:
 
-* Please **do not** use the issue tracker for personal support requests (use
-  [Stack Overflow](https://stackoverflow.com) or IRC)
+* Пожалуйста, **не** используйте средство отслеживания проблем для личных запросов в службу поддержки (используйте [Stack Overflow](https://stackoverflow.com) или IRC)
 
-* Please **do not** derail or troll issues. Keep the discussion on topic and
-  respect the opinions of others
+* Пожалуйста, **не** срывайте и не троллите проблемы. Держите дискуссию по теме и уважайте мнение других
 
+## Пулл-реквесты
 
-## Pull requests
+При создании запроса на включение обратите внимание на следующее:
 
-When creating a pull request, please heed the following:
-
-- Base your code on the latest master branch to avoid manual merges
-- Code review may ensue in order to help shape your proposal
-- Explain the problem and your proposed solution
-- One-line description - please don't continue the description on new lines
+- Основывайте свой код на последней основной ветке, чтобы избежать ручного слияния
+- Может потребоваться проверка кода, чтобы помочь сформировать ваше предложение
+- Объясните проблему и предлагаемое решение
+- Однострочное описание - пожалуйста, не продолжайте описание на новых строках
