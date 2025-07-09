@@ -75,10 +75,11 @@
 ## Полезные ссылки 🔗
 
 * [Больше продуктов](https://themeselection.com/products/) от ThemeSelection
-* [Бесплатные](https://themeselection.com/products/category/freebies/) от ThemeSelection
+* [Бесплатные материалы](https://themeselection.com/products/category/freebies/) от ThemeSelection
 * [Блог](https://themeselection.com/blog/)
+* [Шпаргалка по Vue](https://vue-cheatsheet.themeselection.com/)
 
-## Социальные сети 😇
+## Social Media 😇
 
 * Twitter : [https://twitter.com/themeselect](https://twitter.com/themeselect)
 * Facebook : [https://www.facebook.com/ThemeSelections/](https://www.facebook.com/ThemeSelections/)
